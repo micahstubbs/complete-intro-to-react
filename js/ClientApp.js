@@ -6,7 +6,7 @@ var ce = React.createElement;
 var MyTitle = function (props) {
   return (
     ce('div', null,
-      ce('h1', null, props.title)
+      ce('h1', {style: {color: props.color}}, props.title)
     )
   );
 };
@@ -15,9 +15,10 @@ var MyTitle = function (props) {
 var MyFirstComponent = function () {
   return (
     ce('div', null,
-      ce(MyTitle, {title: 'House of Cards'}),
-      ce(MyTitle, {title: 'Orange is the New Black'}),
-      ce(MyTitle, {title: 'Stranger Things'})
+      // change MyFirstComponent inside div
+      ce(MyTitle, {color: 'rebeccapurple', title: 'House of Cards'}),
+      ce(MyTitle, {color: 'peru', title: 'Orange is the New Black'}),
+      ce(MyTitle, {color: 'burlywood', title: 'Stranger Things'})
     )
   );
 };
