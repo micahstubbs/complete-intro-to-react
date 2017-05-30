@@ -1,15 +1,9 @@
-/* global React ReactDOM */
+import React from 'react';
+import { render } from 'react-dom';
+
+import MyTitle from './MyTitle';
 
 var ce = React.createElement;
-
-// prettier-ignore
-var MyTitle = function (props) {
-  return (
-    ce('div', null,
-      ce('h1', {style: {color: props.color}}, props.title)
-    )
-  );
-};
 
 // prettier-ignore
 var MyFirstComponent = function () {
@@ -23,4 +17,4 @@ var MyFirstComponent = function () {
   );
 };
 
-ReactDOM.render(ce(MyFirstComponent), document.getElementById('app'));
+render(React.createElement(MyFirstComponent), document.getElementById('app'));
