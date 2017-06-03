@@ -6,6 +6,7 @@
     "build": "webpack",
     "test": "jest",
     "test:update": "jest -u",
+    "test:coverage": "jest --coverage",
     "watch": "webpack --watch"
   },
   "jest": {
