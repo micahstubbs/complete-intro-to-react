@@ -6,7 +6,7 @@ import preload from '../data.json';
 
 class Search extends Component {
   state = {
-    searchTerm: 'game'
+    searchTerm: ''
   };
 
   handleSearchTermChange = event => {
