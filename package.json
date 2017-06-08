@@ -1,9 +1,10 @@
 {
   "scripts": {
     "api": "node ratingsAPI.js",
+    "build": "webpack",
+    "dev": "webpack-dev-server",
     "format": "prettier --list-different --single-quote --print-width=120 \"js/**/*.{js,jsx}\"",
     "lint": "eslint **/*.{js,jsx} --quiet",
-    "build": "webpack",
     "test": "jest",
     "test:update": "jest -u",
     "test:coverage": "jest --coverage",
