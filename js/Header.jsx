@@ -32,7 +32,7 @@ const Header = (props: {
       <h1>
         <Link to="/">
           svideo
-        </Link>;
+        </Link>
       </h1>
       {utilSpace}
     </header>
