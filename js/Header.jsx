@@ -20,7 +20,7 @@ const Header = (props: {
     );
   } else {
     utilSpace = (
-      <h2 className="header-back">
+      <h2>
         <Link to="/search">
           Back
         </Link>
