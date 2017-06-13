@@ -22,16 +22,13 @@ const App = () => (
         <Route component={FourOhFour} />
         <Route
           path="/details/:id"
-          component={// prettier-ignore
-          (props: { match: Match }) => { // eslint-disable-line react/no-unused-prop-types
+          component={(props: { match: Match }) => {
             const selectedShow = preload.shows.find(
-              // prettier-ignore
-              (show: Show) => props.params.id === show.imdbID // eslint-disable-line react/prop-types
+              show => props.match.params.id === show.imdbID
             );
             return <Details show={selectedShow} {...props} />;
           }}
         />
-
       </Switch>
     </div>
   </BrowserRouter>

@@ -6,7 +6,7 @@ declare var module: {
   }
 };
 
-declare type Show = {
+declare var Show: {
   title: string,
   description: string,
   year: string,

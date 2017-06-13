@@ -4,13 +4,15 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-const Wrapper = styled.div`
+const Wrapper = styled(Link)`
   width: 32%;
   border: 2px solid #333;
   border-radius: 4px;
   margin-bottom: 25px;
   padding-right: 10px;
   overflow: hidden;
+  text-decoration: none;
+  color: black;
 `;
 
 const Image = styled.img`
