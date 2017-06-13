@@ -1,4 +1,5 @@
-import { SET_SEARCH_TERM } from './actions';
+import { SET_SEARCH_TERM } from './actions'; // eslint-disable-line
+
 const DEFAULT_STATE = {
   searchTerm: ''
 };
