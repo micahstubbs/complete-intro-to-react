@@ -19,7 +19,7 @@ const Details = (props: { show: Show }) => {
           src={`https://www.youtube-nocoookie.com/embed/${trailer}?rel=0&controls=0&showinfo=0`}
           frameBorder="0"
           allowFullScreen
-          title={title}
+          title={`Trailer for ${title}`}
         />
       </div>
     </div>
