@@ -1,8 +1,8 @@
 // @flow
 
 import React from 'react';
-import type { Match } from 'react-router-dom';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import type { Match } from 'react-router-dom';
 import Landing from './Landing';
 import Search from './Search';
 import Details from './Details';
