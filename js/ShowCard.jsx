@@ -1,7 +1,7 @@
 // @flow
 
 import React from 'react';
-import { string } from 'prop-types';
+import { string } from 'prop-types'; // eslint-disable-line no-unused-vars
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
