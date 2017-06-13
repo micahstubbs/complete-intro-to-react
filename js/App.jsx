@@ -19,7 +19,6 @@ const App = () => (
           path="/search"
           component={props => <Search shows={preload.shows} {...props} />}
         />
-        <Route component={FourOhFour} />
         <Route
           path="/details/:id"
           component={(props: { match: Match }) => {
@@ -29,6 +28,7 @@ const App = () => (
             return <Details show={selectedShow} {...props} />;
           }}
         />
+        <Route component={FourOhFour} />
       </Switch>
     </div>
   </BrowserRouter>
