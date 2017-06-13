@@ -3,6 +3,7 @@ import { shallow } from 'enzyme';
 import preload from '../../data.json';
 import Search from '../Search';
 import ShowCard from '../ShowCard';
+import Header from '../Header';
 
 test('Search renders correctly', () => {
   const component = shallow(<Search />);
@@ -17,7 +18,11 @@ test('Search should render correct amount of shows', () => {
 test('Search should render correct amount of shows based on search term', () => {
   const searchWord = 'black';
   const component = shallow(<Search />);
-  component.find('input').simulate('change', { target: { value: searchWord } });
+  component
+    .find(Header)
+    .dive()
+    .find('input')
+    .simulate('change', { target: { value: searchWord } });
   const showCount = preload.shows.filter(
     show =>
       `${show.title} ${show.description}`
