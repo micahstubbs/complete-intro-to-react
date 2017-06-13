@@ -30,8 +30,9 @@ class Search extends Component {
           />
         </header>
         <div>
-          {this.props.route.shows
-            .filter(
+          {// prettier-ignore
+          this.props.route.shows // eslint-disable-line react/prop-types
+            .filter( // eslint-disable-line react/prop-types
               show =>
                 `${show.title} ${show.description}`
                   .toUpperCase()
