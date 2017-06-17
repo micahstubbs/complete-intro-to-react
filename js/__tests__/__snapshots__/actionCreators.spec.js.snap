@@ -2,6 +2,7 @@
 
 exports[`setSearchTerm 1`] = `
 Object {
+  "error": null,
   "payload": "New York",
   "type": "SET_SEARCH_TERM",
 }

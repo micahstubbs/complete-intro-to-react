@@ -4,7 +4,7 @@ import axios from 'axios';
 import { SET_SEARCH_TERM, ADD_API_DATA } from './actions';
 
 export function setSearchTerm(searchTerm: string) {
-  return { type: SET_SEARCH_TERM, payload: searchTerm };
+  return { type: SET_SEARCH_TERM, payload: searchTerm, error: null };
 }
 
 export function addAPIData(apiData: Show) {
