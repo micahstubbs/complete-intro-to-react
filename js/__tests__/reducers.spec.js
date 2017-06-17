@@ -1,6 +1,6 @@
 import reducers from '../reducers';
 
-test('reducers', () => {
+test('SET_SEARCH_TERM', () => {
   const state = reducers(
     { searchTerm: '', apiData: {} },
     { type: 'SET_SEARCH_TERM', payload: 'black' }
