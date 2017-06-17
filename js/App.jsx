@@ -32,6 +32,7 @@ const App = () => (
         />
         <Route component={FourOhFour} />
       </Switch>
+      <h2>{Math.random()}</h2>
     </div>
   </Provider>
 );
